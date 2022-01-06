@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it Down?</title>
+    <script src="/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container-sm">
+        <div class="d-flex align-items-center justify-content-center" style="height: 80vh;">
+            <div class="row flex-column">
+                <div class="col">
+                    <% if (locals.messageFlash) { %>
+                        <% if (locals.messageFlash.alertType == "success") { %>
+                            <div class="alert alert-success" role="alert">
+                                The website <a href="<%= locals.messageFlash.message %>" class="alert-link"><%= locals.messageFlash.message %></a> is up and running.
+                            </div>
+                        <% }; %>
+
+                        <% if (locals.messageFlash.alertType == "danger") { %>
+                            <div class="alert alert-danger" role="alert">
+                                The website <a href="<%= locals.messageFlash.message %>" class="alert-link"><%= locals.messageFlash.message %></a> is down.
+                            </div>
+                            
+                        <% }; %>
+                            
+                    <% }; %>
+                    <% if (locals.wrongFormatFlash) { %>
+                        <div class="alert alert-danger" role="alert">
+                            <%- locals.wrongFormatFlash.message %>
+                        </div>
+                    <% }; %>
+
+                </div>
+                <div class="col">
+                    <h1 class="header d-flex justify-content-center">Is it Down?</h1>
+                </div>
+                <div class="col">
+                    <p>Please provide the website in the following format: https://example.com</p>
+                </div>
+                <form action="/status" method="post">
+                    <div class="col-md">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="inputGroup-sizing-lg">URL:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="url">
+                            
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mt-3">
+                        <button type="submit" class="btn btn-outline-primary" value="Submit">Check</button>
+                    </div>
+                </form>
+            </div>
+        
+
+        </div>
+    </div>
+
+</body>
+</html>

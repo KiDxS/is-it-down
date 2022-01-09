@@ -1,0 +1,4 @@
+- [ ] Create logo 
+- [ ] Create shields icon
+- [ ] Create a gif for the demo
+- [ ] Create README.md

@@ -14,5 +14,5 @@ app.set("view engine", "ejs");
 app.use("/", allRoute);
 
 app.listen(PORT, () => {
-    console.log(`Website is running on http://127.0.0.1:${PORT}`);
+    console.log(`Website is running on port: ${PORT}`);
 });

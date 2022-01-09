@@ -15,13 +15,13 @@
             <div class="row flex-column">
                 <div class="col">
                     <% if (locals.messageFlash) { %>
-                        <% if (locals.messageFlash.alertType == "success") { %>
+                        <% if (locals.messageFlash.alertType === "success") { %>
                             <div class="alert alert-success" role="alert">
                                 The website <a href="<%= locals.messageFlash.message %>" class="alert-link"><%= locals.messageFlash.message %></a> is up and running.
                             </div>
                         <% }; %>
 
-                        <% if (locals.messageFlash.alertType == "danger") { %>
+                        <% if (locals.messageFlash.alertType === "danger") { %>
                             <div class="alert alert-danger" role="alert">
                                 The website <a href="<%= locals.messageFlash.message %>" class="alert-link"><%= locals.messageFlash.message %></a> is down.
                             </div>

@@ -11,7 +11,6 @@ exports.checkWebsite = async function checkWebsiteStatus(req, res) {
                     message: url,
                 },
             });
-            console.log("Server is up");
         }
     } catch (err) {
         res.render("index", {
@@ -20,6 +19,5 @@ exports.checkWebsite = async function checkWebsiteStatus(req, res) {
                 message: url,
             },
         });
-        console.log("Server is down");
     }
 };

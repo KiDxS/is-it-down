@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/KiDxS/BizScrape-API/master/docs/img/logo.png" height="200" width="200">
+  <img src="https://raw.githubusercontent.com/KiDxS/is-it-down/master/docs/img/logo.png" height="400" width="400">
   <br>
   is-it-down?
 </h1>

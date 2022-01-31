@@ -31,7 +31,7 @@
 # Clone the repo
 git clone https://github.com/KiDxS/BizScrape-API
 
-# Build the image and run a container
-docker-compose up
+# Install the packages
+npm i 
 ```
 

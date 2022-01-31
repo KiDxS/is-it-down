@@ -33,5 +33,8 @@ git clone https://github.com/KiDxS/BizScrape-API
 
 # Install the packages
 npm i 
+
+# Run the application
+npm start
 ```
 

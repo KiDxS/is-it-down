@@ -11,20 +11,12 @@
   <a href="https://web.facebook.com/KidZenChan/">
     <img src="https://img.shields.io/badge/chat-on%20facebook-orange">
   </a>
-  <a href="">
-    <img src="https://img.shields.io/badge/heroku-demo-blue">
-  </a>
 </div>
 <p align="center">
-  <a href="#how-to-setup-for-ourselves">How to setup for ourselves</a> |
-  <a href="#key-features">Key Features</a>
+  <a href="#how-to-setup-for-ourselves">How to setup for ourselves</a>
 </p>
 <img align="center" src="https://raw.githubusercontent.com/KiDxS/is-it-down/master/docs/img/demo.png">
 
-## Key Features
-- Validates user input if the value of the form contains `http or https`
-- Escapes special characters `<>"'`
-- Checks whether a website is down.
 
 ## How to setup for ourselves
 ```
